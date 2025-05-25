@@ -3,76 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ysbiyiklioglu</title>
+    <title>Yasin Bıyıklıoğlu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-    
-        body {
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2e2e3f);
+            color: #f0f0f5;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #2c3e50, #000000);
-            transition: background 0.5s ease;
-            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
         }
-        
-     
-        .profile {
+        .container {
+            max-width: 800px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
             text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .profile h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
+        header {
+            padding: 40px 20px 20px;
         }
-        .profile p {
-            margin: 0.5em 0;
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f0f0f5;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #c0c0c8;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
         }
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #555;
-            border: none;
-            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: #3a3a54;
+            color: #f0f0f5;
             text-decoration: none;
-            color: #fff;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background 0.3s ease;
         }
         .btn:hover {
-            background-color: #777;
+            background: #50506a;
+        }
+        section.about {
+            padding: 0 40px 40px;
+            line-height: 1.6;
+        }
+        section.about h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        footer {
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #8888a0;
+        }
+        @media (max-width: 600px) {
+            .buttons { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
         }
     </style>
 </head>
 <body>
-    <div class="profile">
-        <h1>Yasin Bıyıklıoğlu</h1>
-        <p>
-            GitHub: <a class="btn" href="https://github.com/ysbiyiklioglu" target="_blank">GitHub Profile</a>
-        </p>
-        <p>
-            LinkedIn: <a class="btn" href="https://www.linkedin.com/in/yasin-b%C4%B1y%C4%B1kl%C4%B1o%C4%9Flu-b4b56529a/" target="_blank">LinkedIn Profile</a>
-        </p>
-        <p>
-            Email: <a class="btn" href="mailto:ysbiyiklioglu">ysbiyiklioglu@gmail.com</a>
-        </p>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Yasin Bıyıklıoğlu" class="avatar">
+            <h1>Yasin Bıyıklıoğlu</h1>
+            <p class="subtitle">Oyun Geliştiricisi & Python</p>
+            <div class="buttons">
+                <a href="https://github.com/ysbiyiklioglu" class="btn" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yasin-b%C4%B1y%C4%B1kl%C4%B1o%C4%9Flu-b4b56529a/" class="btn" target="_blank">LinkedIn</a>
+                <a href="mailto:ysbiyiklioglu@gmail.com" class="btn">Email</a>
+                <a href="yasin_bıyıklıoğlu_cv.pdf" class="btn" download>CV İndir</a>
+            </div>
+        </header>
+        <section class="about">
+            <h2>Hakkımda</h2>
+            <p>Merhaba! Ben Yasin. Yeni oyun mekaniği tasarlamayı, etkileşimli sahneler yaratmayı ve Python ile otomasyon skriptleri yazmayı seviyorum. Teknoloji dünyasındaki yenilikleri takip etmeyi, problem çözmeyi ve topluluklarla birlikte projeler geliştirmeyi tutkuyla sürdürüyorum.</p>
+        </section>
     </div>
-    <script>
-
-        document.body.addEventListener('click', function() {
-            const backgrounds = [
-                'linear-gradient(45deg, #2c3e50, #000000)',
-                'linear-gradient(45deg, #34495e, #2c3e50)',
-                'linear-gradient(45deg, #1c1c1c, #333333)',
-                'linear-gradient(45deg, #000000, #434343)'
-            ];
-            const randomIndex = Math.floor(Math.random() * backgrounds.length);
-            document.body.style.background = backgrounds[randomIndex];
-        });
-    </script>
 </body>
 </html>
