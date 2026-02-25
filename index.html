@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasin Bıyıklıoğlu | Portfolio</title>
+    <meta name="description" content="Yasin Bıyıklıoğlu - Oyun geliştirici (Unity/Unreal), Python, PyTorch ve bilgisayarlı görü odaklı projeler. Portfolyo, oyun projeleri ve diğer çalışmalar.">
+    <meta name="author" content="Yasin Bıyıklıoğlu">
+    <meta name="theme-color" content="#121220">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yasin Bıyıklıoğlu | Portfolio">
+    <meta property="og:description" content="Oyun geliştirme, Python otomasyon, PyTorch ve bilgisayarlı görü projeleri.">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Yasin Bıyıklıoğlu | Portfolio">
+    <meta name="twitter:description" content="Oyun geliştirme, Python otomasyon, PyTorch ve bilgisayarlı görü projeleri.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,12 +38,35 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: var(--bg-dark);
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid rgba(165, 59, 244, 0.8);
+            outline-offset: 4px;
+            border-radius: 10px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
         }
 
         #particles-js {
@@ -588,13 +624,13 @@
             <p class="subtitle"><span class="typed-text"></span></p>
             
             <div class="social-buttons">
-                <a href="https://github.com/ysbiyiklioglu" class="social-btn" target="_blank" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://github.com/ysbiyiklioglu" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profilim" data-aos="fade-up" data-aos-delay="200">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/yasin-b%C4%B1y%C4%B1kl%C4%B1o%C4%9Flu-b4b56529a/" class="social-btn" target="_blank" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.linkedin.com/in/yasin-b%C4%B1y%C4%B1kl%C4%B1o%C4%9Flu-b4b56529a/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profilim" data-aos="fade-up" data-aos-delay="300">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:ysbiyiklioglu@gmail.com" class="social-btn" data-aos="fade-up" data-aos-delay="400">
+                <a href="mailto:ysbiyiklioglu@gmail.com" class="social-btn" aria-label="E-posta gönder" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-envelope"></i>
                 </a>
 
@@ -607,6 +643,9 @@
                 <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="700">
                     <i class="fas fa-code"></i> Oyun Projelerim
                 </a>
+                <a href="#other-projects" class="btn" data-aos="fade-up" data-aos-delay="750">
+                    <i class="fas fa-layer-group"></i> Diğer Projelerim
+                </a>
                 <a href="yasin_bıyıklıoğlu_cv.pdf" class="btn" download data-aos="fade-up" data-aos-delay="800">
                     <i class="fas fa-download"></i> CV İndir
                 </a>
@@ -614,12 +653,12 @@
         </div>
     </section>
 
-    <div class="container">
+    <main class="container">
         <section class="about-section" id="about" data-aos="fade-up">
             <h2>Hakkımda</h2>
             <div class="about-text">
-                <p>Merhaba! Ben Yasin. Yeni oyun mekaniği tasarlamayı, etkileşimli sahneler yaratmayı ve Python ile otomasyon skriptleri yazmayı seviyorum. Teknoloji dünyasındaki yenilikleri takip etmeyi, problem çözmeyi ve topluluklarla birlikte projeler geliştirmeyi tutkuyla sürdürüyorum.</p>
-                <p>Yaratıcı düşünceyi ve teknik yeteneği birleştirerek kullanıcı deneyimini iyileştiren çözümler geliştirmeye odaklanıyorum. Her projede yeni şeyler öğrenmek ve kendimi geliştirmek için çabalıyorum.</p>
+                <p>Merhaba! Ben Yasin. Oyun geliştirme tarafında yeni mekanikler tasarlamayı, etkileşimli sahneler kurgulamayı ve oynanışı daha akıcı hâle getiren sistemler geliştirmeyi seviyorum. Python ile otomasyon skriptleri yazarak süreçleri hızlandırmayı; aynı zamanda yapay zekâ ve bilgisayarlı görü gibi alanlardaki yenilikleri yakından takip etmeyi önemsiyorum.</p>
+                <p>Yaratıcı düşünceyi teknik altyapıyla birleştirerek, kullanıcı deneyimini güçlendiren ve ölçülebilir değer üreten çözümler geliştirmeye odaklanıyorum. Her projeyi; temiz kod, sürdürülebilir yapı ve sürekli öğrenme yaklaşımıyla ilerleyen bir gelişim fırsatı olarak görüyorum.</p>
             </div>
         </section>
 
@@ -641,6 +680,54 @@
                     <h3 class="skill-name">Python</h3>
                     <p class="skill-desc">Otomasyon, veri analizi ve backend geliştirme için Python kullanıyorum.</p>
                 </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="skill-name">PyTorch</h3>
+                    <p class="skill-desc">Derin öğrenme modelleri geliştirme, eğitim ve deneme süreçlerinde PyTorch kullanıyorum.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-name">Makine Öğrenmesi</h3>
+                    <p class="skill-desc">Sınıflandırma, regresyon ve model değerlendirme süreçlerinde pratik deneyim.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="skill-name">Bilgisayarlı Görü</h3>
+                    <p class="skill-desc">Görüntü işleme ve model tabanlı tespit/analiz problemlerine odaklanıyorum.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <p class="skill-desc">Versiyon kontrol, branch stratejileri ve repo yönetimi ile düzenli geliştirme.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="skill-name">Bot Geliştirme</h3>
+                    <p class="skill-desc">Discord botları ve otomasyon odaklı araçlar geliştiriyorum.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-name">Veri Analizi</h3>
+                    <p class="skill-desc">Veriyi temizleme, analiz etme ve raporlama süreçlerinde pratik yaklaşım.</p>
+                </div>
                 
   
      
@@ -656,7 +743,7 @@
                         <h3 class="project-title">Samuray Oyunu</h3>
                         <p class="project-desc">Unity ile Oyun Programlama dersi finalinde Geliştirdiğim 3D Samuray oyunu.karakter kontrolü ve Dövüş sistemleri içeriyor.</p>
                         <div class="project-links">
-                            <a href="https://github.com/ysbiyiklioglu/samurai_game" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/ysbiyiklioglu/samurai_game" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -688,11 +775,7 @@
             <h2 class="projects-title" data-aos="fade-up">Diğer Projelerim</h2>
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <img
-                        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%234a2fc1'/><stop offset='1' stop-color='%23a53bf4'/></linearGradient></defs><rect width='1200' height='800' fill='%23121220'/><rect x='0' y='0' width='1200' height='800' fill='url(%23g)' opacity='0.35'/><g fill='white' opacity='0.9' font-family='Poppins, Arial, sans-serif'><text x='70' y='160' font-size='64' font-weight='700'>Deepfake Detection</text><text x='70' y='230' font-size='28' opacity='0.85'>Video/G%C3%B6r%C3%BCnt%C3%BC sahtecili%C4%9Fi tespiti projesi</text></g></svg>"
-                        alt="Deepfake Detection"
-                        class="project-img"
-                    >
+                    <img src="deepfake.png" alt="Deepfake Detection" class="project-img">
                     <div class="project-content">
                         <h3 class="project-title">Deepfake Detection</h3>
                         <p class="project-desc">Deepfake (sahte video/görsel) tespitine odaklanan projem. Kod ve detaylar GitHub reposunda.</p>
@@ -710,6 +793,7 @@
                         alt="Discord Bot"
                         class="project-img"
                     >
+                    
                     <div class="project-content">
                         <h3 class="project-title">Discord Bot</h3>
                         <p class="project-desc">Discord sunucuları için geliştirdiğim bot projesi. Özellikler ve kurulum adımları repoda.</p>
@@ -722,7 +806,14 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">© <span id="year"></span> Yasin Bıyıklıoğlu • Tüm hakları saklıdır.</p>
+            <p class="footer-text">İletişim: <a href="mailto:ysbiyiklioglu@gmail.com" class="project-link">ysbiyiklioglu@gmail.com</a></p>
+        </div>
+    </footer>
 
 
 
@@ -796,6 +887,7 @@
         const scrollBtn = document.createElement('a');
         scrollBtn.href = "#";
         scrollBtn.className = "scroll-to-top";
+        scrollBtn.setAttribute('aria-label', 'Yukarı çık');
         scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
         document.body.appendChild(scrollBtn);
         window.addEventListener('scroll', () => {
@@ -809,6 +901,10 @@
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Footer year
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
