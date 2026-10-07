@@ -135,16 +135,22 @@
             margin: 0 auto 30px;
         }
 
-        .avatar {
+        .avatar-frame {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            object-fit: cover;
+            overflow: hidden;
             border: 4px solid var(--primary);
-            transition: var(--transition);
             animation: pulse 3s infinite;
             position: relative;
             z-index: 2;
+        }
+
+        .avatar {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .avatar-outline {
@@ -600,7 +606,7 @@
                 padding: 25px;
                 margin-top: -60px;
             }
-            .avatar {
+            .avatar-container {
                 width: 140px;
                 height: 140px;
             }
@@ -617,7 +623,9 @@
     <section class="hero" id="home">
         <div class="hero-content" data-aos="fade-up">
             <div class="avatar-container">
-                <img src="profile.jpg" alt="Yasin Bıyıklıoğlu" class="avatar">
+                <div class="avatar-frame">
+                    <img src="profile-avatar.png" alt="Yasin Bıyıklıoğlu" class="avatar" width="720" height="720" decoding="async">
+                </div>
                 <div class="avatar-outline"></div>
             </div>
             <h1 class="name">Yasin Bıyıklıoğlu</h1>
